@@ -1,0 +1,11 @@
+1. MVP scope (route: /dashboards)
+One page: /dashboards/page.jsx
+
+Shows 3–4 KPI cards (e.g., total revenue, new users, pending tasks)
+
+Simple data grid / table of “recent metrics”
+
+A light filter bar (Today / This Week / This Month)
+
+All data is mocked in lib/mockDashboard.js
+
