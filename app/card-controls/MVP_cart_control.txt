@@ -1,0 +1,18 @@
+MVP idea (route: /card-controls)
+A self‑service card‑controls dashboard where a user:
+
+Views their linked card list
+
+Toggles card on/off
+
+Toggles a few key card controls:
+
+Allow ATM
+
+Allow international
+
+Allow online
+
+Sees a short “card status” summary
+
+All data is mocked, no real banking API.

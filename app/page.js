@@ -31,6 +31,15 @@ const Home = () => {
         <Link href="/dashboards" className="hover:underline p-2">
           View Business Dashboard
         </Link>
+        <Link href="/card-controls" className="hover:underline p-2">
+          View Card Controls
+        </Link>
+      </div>
+      <div className="bg-gray-900 text-white p-4 mb-6 rounded-lg">
+        <h1 className="text-2xl font-bold mb-2">Fintech / Banking Hackathon Notes</h1>
+        <p className="text-gray-300">
+          Key principles, common questions, and strategic approach for building secure and user-friendly fintech features.
+        </p>
       </div>
       <h1>Hackathon Notes (Fintech / Banking)</h1>
       <Section title="Expect Questions">
