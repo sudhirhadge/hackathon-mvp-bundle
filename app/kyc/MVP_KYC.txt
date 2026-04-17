@@ -1,0 +1,40 @@
+1. MVP idea (within this single repo)
+“Digital KYC Onboarding” as a stand‑alone route http://localhost:3000/kyc:
+
+Clean, mobile‑friendly flow:
+Start KYC → Personal Info → Upload ID → See Status
+
+Everything is frontend only, mock data, no real APIs.
+
+Fits into your single repo and co‑exists with other topics like /prompt-generator, /todo-ai, etc.
+
+2. User flow (inside /kyc)
+Landing / Start KYC (/kyc/page.jsx)
+
+Hero: “Digital KYC Onboarding” + brief intro.
+
+“Start KYC” button → /kyc/form.
+
+Personal info form (/kyc/form/page.jsx)
+
+Fields: full name, date of birth, country, address, phone, email.
+
+“Continue” → /kyc/documents.
+
+Document upload (/kyc/documents/page.jsx)
+
+Two FileUpload slots: ID front + ID back.
+
+Image previews.
+
+“Submit for KYC” → /kyc/status.
+
+KYC status (/kyc/status/page.jsx)
+
+Shows:
+
+KYC Status: Approved / Pending / Rejected
+
+Short reason (mock).
+
+“New onboarding” → back to /kyc/form.

@@ -1,0 +1,22 @@
+hackathon-mvp-bundle/
+├── app/
+│   ├── layout.jsx
+│   ├── globals.css
+│   ├── page.jsx                 # Landing with links to all topics
+│   ├── kyc/                     # Digital KYC onboarding route 
+│   │   ├── page.jsx             # Intro / start KYC
+│   │   ├── form/page.jsx        # Personal details
+│   │   ├── documents/page.jsx   # Upload ID front/back
+│   │   └── status/page.jsx      # KYC status result
+├── components/
+│   ├── ui/
+│   │   ├── Button.jsx
+│   │   ├── Input.jsx
+│   │   ├── Card.jsx
+│   │   └── FileUpload.jsx
+│   ├── FormLayout.jsx
+│   └── StatusCard.jsx
+├── lib/
+│   └── mockKyc.js               # Mock KYC status logic
+├── public/
+└── tailwind.config.js
