@@ -1,0 +1,39 @@
+1. MVP idea (topic: Payments & Transaction Management)
+A “Payments Dashboard” at /payments:
+
+Users can:
+
+View a list of recent transactions
+
+Add a new transaction
+
+Filter by type (income/expense)
+
+See a simple summary card (total balance, total income, total expenses)
+
+Everything is frontend‑only, mock data, no real payments API.
+
+URL: http://localhost:3000/payments
+
+2. User flow (inside /payments)
+Landing (/payments/page.jsx)
+
+Title: “Payments Dashboard”.
+
+Button: “Add Transaction” → /payments/add.
+
+Add Transaction (/payments/add/page.jsx)
+
+Form: amount, type (income/expense), category, description, date.
+
+“Save” → back to /payments with list updated (mock).
+
+Transactions list (/payments/page.jsx also shows list)
+
+Filter: “All / Income / Expense”.
+
+Simple table: Date, Description, Category, Amount, Type badge.
+
+Success / confirmation
+
+After adding: toast or inline message “Transaction added!”.
