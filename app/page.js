@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Section = ({ title, children }) => (
@@ -20,8 +21,18 @@ const List = ({ items }) => (
 const Home = () => {
   return (
     <div style={{ padding: "20px", fontFamily: "Arial" }}>
+      <div className="bg-blue-100 text-black p-2 mb-4 text-left font-bold text-xl mb-8 px-2">
+        <Link href="/payments" className="hover:underline p-2">
+          View Payments Dashboard
+        </Link>
+        <Link href="/kyc/form" className="hover:underline">
+          Start KYC Flow
+        </Link>
+        <Link href="/dashboards" className="hover:underline p-2">
+          View Business Dashboard
+        </Link>
+      </div>
       <h1>Hackathon Notes (Fintech / Banking)</h1>
-
       <Section title="Expect Questions">
         <List
           items={[
