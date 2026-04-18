@@ -34,6 +34,9 @@ const Home = () => {
         <Link href="/card-controls" className="hover:underline p-2">
           View Card Controls
         </Link>
+        <Link href="/support-cases" className="hover:underline p-2">
+          View Support Cases
+        </Link>
       </div>
       <div className="bg-gray-900 text-white p-4 mb-6 rounded-lg">
         <h1 className="text-2xl font-bold mb-2">Fintech / Banking Hackathon Notes</h1>

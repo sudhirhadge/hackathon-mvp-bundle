@@ -1,0 +1,41 @@
+// app/support-cases/page.jsx
+"use client";
+
+import { useState } from "react";
+import { SUPPORT_CASES } from "@/lib/mockSupportCases";
+import CaseItem from "@/components/CaseItem";
+import CaseDetailsModal from "@/components/CaseDetailsModal";
+
+export default function SupportCasesPage() {
+  const [selectedCase, setSelectedCase] = useState(null);
+
+  return (
+    <div className="min-h-screen px-4 py-6 text-white">
+      <div className="max-w-2xl mx-auto">
+        <h1 className="text-2xl font-bold mb-2">
+          Customer Support Case Tracking
+        </h1>
+        <p className="text-sm text-gray-300 mb-6">
+          View and track your support cases and messages.
+        </p>
+
+        <div className="space-y-3">
+          {SUPPORT_CASES.map((c) => (
+            <CaseItem
+              key={c.id}
+              case={c}
+              onClick={setSelectedCase}
+            />
+          ))}
+        </div>
+
+        {selectedCase && (
+          <CaseDetailsModal
+            case={selectedCase}
+            onClose={() => setSelectedCase(null)}
+          />
+        )}
+      </div>
+    </div>
+  );
+}
